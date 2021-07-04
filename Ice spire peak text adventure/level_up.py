@@ -73,7 +73,6 @@ if character_creation.exp >= 305000:
 if character_creation.exp >= 355000:
     level_up()
 
-print(character_creation.total_level)
 
 
 
