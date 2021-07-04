@@ -83,10 +83,10 @@ ranger_level = 0
 wizard_level = 0
 
 
-
-
-
-
+longsword_proficiency = 0
+greatsword_proficiency = 0
+bow_proficiency = 0
+dagger_proficiency = 0
 
 class_list = ["fighter", "ranger", "wizard"]
 pcclass = input("what is your class")
@@ -98,6 +98,8 @@ if pcclass == "fighter":
     Hp = 10+ConstitutionMod
     fighterLevel = fighter_level+1
     totalLevel = total_level+1
+    longsword_proficiency = proficiency
+    greatsword_proficiency = proficiency
     if weapon_choice != "sword" or "greatsword":
         weapon_choice = input("do you want a sword or a greatsword")
         if weapon_choice == "sword":
@@ -119,6 +121,8 @@ elif pcclass == "ranger":
     Hp = 8+ConstitutionMod
     rangerLevel = ranger_level +1
     totalLevel = total_level+1
+    longsword_proficiency = proficiency
+    bow_proficiency = proficiency
     if weapon_choice != "sword" or "bow":
         weapon_choice = input("do you want a sword or a bow")
     if weapon_choice == "sword":
@@ -132,7 +136,8 @@ elif pcclass == "wizard":
     spell_1 = 2
     wizardLevel = wizard_level +1
     totalLevel = total_level+1
-    weapon = "one handed"
+    dagger_proficiency = proficiency
+    weapon = "dagger"
     print("you have a dagger")
    
    
