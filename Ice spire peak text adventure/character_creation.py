@@ -21,9 +21,10 @@ Stat_Points = 30
 
 Create_character();
     Print("your strength score is"+(str(Strength))+" , your dexterity score is"+(str(Dexterity))+", your Intelligence Score is"+(str(Intelligence))+" , your constitution score is"+(str(Constitution))+" , your wisdom score is"+(str(Wisdom))+" , your charisma score is"+(str(Charisma)))
-        Input("What socres do you wish to increase?")
-
-
+        Score_chnage = input("What socres do you wish to increase?")
+            If Score_Change == "strength"  
+                Strength + 1, Stat_Points - 1
+                
 
 
 
