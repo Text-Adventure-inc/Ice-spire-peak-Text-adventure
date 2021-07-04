@@ -77,22 +77,28 @@ spell_9 = 0
 ### class system
 Hp = 0
 ac = 10+DexterityMod
-totalLevel = 0
-fighterLevel = 0
-rangerLevel = 0
-wizardLevel = 0
+total_level = 0
+fighter_level = 0
+ranger_level = 0
+wizard_level = 0
+
+
+
+
+
+
 
 class_list = ["fighter", "ranger", "wizard"]
 pcclass = input("what is your class")
 
 
-
+weapon_choice = "sgsga"
 ### fighter shit
 if pcclass == "fighter":
     Hp = 10+ConstitutionMod
-    fighterLevel = fighterLevel+1
-    totalLevel = totalLevel+1
-    while weapon_choice != "sword" or "greatsword":
+    fighterLevel = fighter_level+1
+    totalLevel = total_level+1
+    if weapon_choice != "sword" or "greatsword":
         weapon_choice = input("do you want a sword or a greatsword")
         if weapon_choice == "sword":
             weapon = "one handed"
@@ -111,23 +117,24 @@ if pcclass == "fighter":
 ### ranger shit
 elif pcclass == "ranger":
     Hp = 8+ConstitutionMod
-    rangerLevel = rangerLevel +1
-    totalLevel = totalLevel+1
-    while weapon_choice != "sword" or "bow":
+    rangerLevel = ranger_level +1
+    totalLevel = total_level+1
+    if weapon_choice != "sword" or "bow":
         weapon_choice = input("do you want a sword or a bow")
-        if weapon_choice == "sword":
-            weapon = "one handed"
-        elif weapon_choice == "bow":
-            weapon = "ranged"
+    if weapon_choice == "sword":
+        weapon = "one handed"
+    elif weapon_choice == "bow":
+        weapon = "ranged"
 
 ### wizard shit
 elif pcclass == "wizard":
     Hp = 6+ConstitutionMod
     spell_1 = 2
-    wizardLevel = wizardLevel +1
-    totalLevel = totalLevel+1
+    wizardLevel = wizard_level +1
+    totalLevel = total_level+1
     weapon = "one handed"
     print("you have a dagger")
+   
    
 
 ### Skills?
