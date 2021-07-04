@@ -6,12 +6,15 @@ def level_up():
     if new_level == "fighter":
         fighter_level = character_creation.fighter_level+1
         character_creation.total_level = character_creation.total_level+1
+        character_creation.Hp = character_creation.Hp + 10+ character_creation.ConstitutionMod
     elif new_level == "ranger":
         ranger_level = character_creation.ranger_level+1
         character_creation.total_level = character_creation.total_level+1
+        character_creation.Hp = character_creation.Hp + 8+ character_creation.ConstitutionMod
     elif new_level == "wizard":
         wizard_level = character_creation.wizard_level+1
         character_creation.total_level = character_creation.total_level+1
+        character_creation.Hp = character_creation.Hp + 6 + character_creation.ConstitutionMod
 ### needs to be changed to follow the sexy code rules
 if character_creation.exp >= 300:
     level_up()
