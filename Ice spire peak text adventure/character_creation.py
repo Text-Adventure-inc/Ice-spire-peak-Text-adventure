@@ -118,7 +118,9 @@ elif pcclass == "ranger":
         if weapon_choice == "sword":
             weapon = "one handed"
         elif weapon_choice == "bow":
-    ### wizard shit
+            weapon = "ranged"
+
+### wizard shit
 elif pcclass == "wizard":
     Hp = 6+ConstitutionMod
     spell_1 = 2
@@ -126,6 +128,7 @@ elif pcclass == "wizard":
     totalLevel = totalLevel+1
     weapon = "one handed"
     print("you have a dagger")
+   
 
 ### Skills?
 athletics = 0
