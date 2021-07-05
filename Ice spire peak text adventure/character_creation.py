@@ -59,8 +59,21 @@ def Create_character():
 
 ### Leveling systems
 exp = 0
-Base_Level = 1
-proficiency = 2
+proficiency = 0
+total_level = 0
+fighter_level = 0
+ranger_level = 0
+wizard_level = 0
+if total_level == 1 or 2 or 3 or 4:
+    proficiency = 2
+elif total_level == 5 or 6 or 7 or 8:
+    proficiency = 3
+elif total_level == 9 or 10 or 11 or 12:
+    proficiency = 4
+elif total_level == 13 or 14 or 15 or 16:
+    proficiency = 5
+elif total_level == 17 or 18 or 19 or 20:
+    proficiency = 6
 
 
 ### spell slots
@@ -77,10 +90,9 @@ spell_9 = 0
 ### class system
 Hp = 0
 ac = 0
-total_level = 0
-fighter_level = 0
-ranger_level = 0
-wizard_level = 0
+
+
+
 
 
 
