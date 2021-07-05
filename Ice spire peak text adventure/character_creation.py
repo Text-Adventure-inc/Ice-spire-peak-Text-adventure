@@ -162,7 +162,7 @@ elif pcclass == "wizard":
     ac = 10+DexterityMod+ac
    
    
-
+pc_initiative = 0
 ### Skills?
 athletics = 0
 survival = 0
