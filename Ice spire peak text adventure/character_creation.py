@@ -110,12 +110,6 @@ if pcclass == "fighter":
     fighting_style = input("do you want your fighting style to be defensive, dueling or great weapon fighting")
     if fighting_style == "defensive":
             ac = ac+1
-    elif fighting_style == "dueling":
-        if weapon == "one handed":
-            attack_roll = attack_roll+2
-    elif fighting_style == "great weapon fighting":
-        if weapon == "two handed" and damage_roll == 1:
-            damage_roll()
 ### ranger shit
 elif pcclass == "ranger":
     Hp = 8+ConstitutionMod
