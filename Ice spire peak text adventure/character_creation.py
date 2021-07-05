@@ -5,12 +5,12 @@ name = input("what is your characters name?")
 
 ### Stats
 
-Strength = 8
-Dexterity = 8
-Intelligence = 8
-Constitution = 8
-Wisdom = 8
-Charisma = 8
+Strength = 10
+Dexterity = 10
+Intelligence = 10
+Constitution = 10
+Wisdom = 10
+Charisma = 10
 
 StrengthMod = Strength - 10/2
 DexterityMod = Dexterity - 10/2
