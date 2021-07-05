@@ -12,12 +12,12 @@ Constitution = 10
 Wisdom = 10
 Charisma = 10
 
-StrengthMod = Strength - 10/2
-DexterityMod = Dexterity - 10/2
-IntelligenceMod = Intelligence - 10/2
-ConstitutionMod = Constitution - 10/2
-WisdomMod = Wisdom - 10/2
-CharismaMod = Wisdom - 10/2
+StrengthMod = (Strength - 10)/2
+DexterityMod = (Dexterity - 10)/2
+IntelligenceMod = (Intelligence - 10)/2
+ConstitutionMod = (Constitution - 10)/2
+WisdomMod = (Wisdom - 10)/2
+CharismaMod = (Wisdom - 10)/2
 
 StrengthMax = 20
 DexterityMax = 20
