@@ -76,11 +76,14 @@ spell_9 = 0
 
 ### class system
 Hp = 0
-ac = 10+DexterityMod
+ac = 0
 total_level = 0
 fighter_level = 0
 ranger_level = 0
 wizard_level = 0
+
+
+
 
 
 longsword_proficiency = 0
@@ -110,6 +113,11 @@ if pcclass == "fighter":
     fighting_style = input("do you want your fighting style to be defensive, dueling or great weapon fighting")
     if fighting_style == "defensive":
             ac = ac+1
+    armour = input("would you like light or heavy armour")
+    if armour == "light":
+        ac = 12+DexterityMod+ac
+    elif armour == "heavy":
+        ac = 16+ac
 ### ranger shit
 elif pcclass == "ranger":
     Hp = 8+ConstitutionMod
@@ -117,6 +125,11 @@ elif pcclass == "ranger":
     totalLevel = total_level+1
     longsword_proficiency = proficiency
     bow_proficiency = proficiency
+    armour = input("would you like light armour")
+    if armour == "yes":
+        ac = 12+DexterityMod+ac
+    else:
+        ac = 10+DexterityMod+ac
     if weapon_choice != "sword" or "bow":
         weapon_choice = input("do you want a sword or a bow")
     if weapon_choice == "sword":
@@ -133,6 +146,8 @@ elif pcclass == "wizard":
     dagger_proficiency = proficiency
     weapon = "dagger"
     print("you have a dagger")
+    print("as a wizard you can't wear armour")
+    ac = 10+DexterityMod+ac
    
    
 
