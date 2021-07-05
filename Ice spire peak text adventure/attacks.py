@@ -1,14 +1,14 @@
 import character_creation
 import random
 from character_creation import weapon
-from character_creation import fighting_style
+
 
 critical = False
 def do_attack():
     if weapon == "one handed":
         attack_roll = random.randint(1,20)
         attack_roll0 = attack_roll+character_creation.StrengthMod + character_creation.longsword_proficiency
-        if fighting_style == "dueling":
+        if character_creation.fighting_style == "dueling":
             attack_roll0 = attack_roll0+2
         if attack_roll == 20:
             critical = True
@@ -43,9 +43,9 @@ def do_damage():
     elif weapon == "two handed":
         damage_roll1 = random.randint(1,6) + character_creation.StrengthMod
         damage_roll2 = random.randint(1,6) + character_creation.StrengthMod
-        if fighting_style == "great weapon fighting" and damage_roll1 == 1:
+        if character_creation.fighting_style == "great weapon fighting" and damage_roll1 == 1:
             damage_roll1 = random.randint(1,6) + character_creation.StrengthMod
-        elif fighting_style == "great weapon fighting" and damage_roll2 == 1:
+        elif character_creation.fighting_style == "great weapon fighting" and damage_roll2 == 1:
             damage_roll2 = random.randint(1,6) + character_creation.StrengthMod
         damage_roll = damage_roll1+damage_roll2
         if critical == True:
