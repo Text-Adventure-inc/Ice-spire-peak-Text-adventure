@@ -106,7 +106,7 @@ dagger_proficiency = 0
 class_list = ["fighter", "ranger", "wizard"]
 pcclass = input("what is your class")
 
-
+fighting_style = "asdfdfdsa"
 weapon_choice = "sgsga"
 ### fighter shit
 if pcclass == "fighter":
