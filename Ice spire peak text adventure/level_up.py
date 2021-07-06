@@ -16,67 +16,62 @@ def level_up():
         character_creation.total_level = character_creation.total_level+1
         character_creation.Hp = character_creation.Hp + 6 + character_creation.ConstitutionMod
 ### needs to be changed to follow the sexy code rules
-if character_creation.exp >= 300:
+if character_creation.exp >= 300 and character_creation.total_level <2:
     level_up()
 
-if character_creation.exp >= 900:
+if character_creation.exp >= 900 and character_creation.total_level <3:
     level_up()
 
-if character_creation.exp >= 2700:
+if character_creation.exp >= 2700 and character_creation.total_level <4:
     level_up()
 
-if character_creation.exp >= 6500:
+if character_creation.exp >= 6500 and character_creation.total_level <5:
     level_up()
 
-if character_creation.exp >= 14000:
+if character_creation.exp >= 14000 and character_creation.total_level <6:
     level_up()
 
-if character_creation.exp >= 23000:
+if character_creation.exp >= 23000 and character_creation.total_level <7:
     level_up()
 
-if character_creation.exp >= 34000:
+if character_creation.exp >= 34000 and character_creation.total_level <8:
     level_up()
 
-if character_creation.exp >= 48000:
+if character_creation.exp >= 48000 and character_creation.total_level <9:
     level_up()
 
-if character_creation.exp >= 64000:
+if character_creation.exp >= 64000 and character_creation.total_level <10:
     level_up()
 
-if character_creation.exp >= 85000:
+if character_creation.exp >= 85000 and character_creation.total_level <11:
     level_up()
 
-if character_creation.exp >= 100000:
+if character_creation.exp >= 100000 and character_creation.total_level <12:
     level_up()
 
-if character_creation.exp >= 120000:
+if character_creation.exp >= 120000 and character_creation.total_level <13:
     level_up()
 
-if character_creation.exp >= 140000:
+if character_creation.exp >= 140000 and character_creation.total_level <14:
     level_up()
 
-if character_creation.exp >= 165000:
+if character_creation.exp >= 165000 and character_creation.total_level <15:
     level_up()
 
-if character_creation.exp >= 195000:
+if character_creation.exp >= 195000 and character_creation.total_level <16:
     level_up()
 
-if character_creation.exp >= 195000:
+if character_creation.exp >= 195000 and character_creation.total_level <17:
     level_up()
 
-if character_creation.exp >= 225000:
+if character_creation.exp >= 225000 and character_creation.total_level <18:
     level_up()
 
-if character_creation.exp >= 265000:
+if character_creation.exp >= 265000 and character_creation.total_level <19:
     level_up()
 
-if character_creation.exp >= 305000:
+if character_creation.exp >= 305000 and character_creation.total_level <20:
     level_up()
-
-if character_creation.exp >= 355000:
-    level_up()
-
-
 
 
 
