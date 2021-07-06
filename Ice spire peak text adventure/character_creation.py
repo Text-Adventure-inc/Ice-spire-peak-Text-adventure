@@ -17,7 +17,7 @@ DexterityMod = (Dexterity - 10)/2
 IntelligenceMod = (Intelligence - 10)/2
 ConstitutionMod = (Constitution - 10)/2
 WisdomMod = (Wisdom - 10)/2
-CharismaMod = (Wisdom - 10)/2
+CharismaMod = (Charisma - 10)/2
 
 StrengthMax = 20
 DexterityMax = 20
@@ -26,7 +26,7 @@ ConstitutionMax = 20
 WisdomMax = 20
 CharismaMax = 20
 
-Stat_Points = 30
+Stat_Points = 20
 Stat_change_Points = Stat_Points
 
 def Create_character():
@@ -57,7 +57,7 @@ def Create_character():
     
     
 
-### Leveling systems
+### Leveling systems 
 exp = 0
 proficiency = 0
 total_level = 0
@@ -90,8 +90,6 @@ spell_9 = 0
 ### class system
 Hp = 0
 ac = 0
-
-
 
 
 
@@ -161,8 +159,9 @@ elif pcclass == "wizard":
     print("as a wizard you can't wear armour")
     ac = 10+DexterityMod+ac
    
-   
+
 pc_initiative = 0
+
 ### Skills?
 athletics = 0
 survival = 0
@@ -173,3 +172,5 @@ elif pcclass == "ranger":
     survival = proficiency + WisdomMod
 elif pcclass == "wizard":
     arcana = proficiency + IntelligenceMod
+
+
