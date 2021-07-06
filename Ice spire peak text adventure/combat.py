@@ -2,7 +2,7 @@ import attacks
 import character_creation
 import random
 if enemy_attitude == "hostile":
-    fight_start == 1
+    fight_start = 1
 if fight_start == 1:
     character_creation.pc_initiative = random.randint(1,20)+character_creation.DexterityMod
     enemy_initiative = random.randint(1,20)+enemy_DexterityMod
